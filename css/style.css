@@ -175,3 +175,32 @@ input[type="radio"].visually-hidden {
 .search-form__button:active path {
   fill: #222222;
 }
+
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+
+}
+
+.user-menu__item_cart {
+  position: relative;
+  width: 58px;
+  height: 38px;
+}
+
+.user-menu__item_cart::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 29px;
+  background-image: url(../img/cart.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+}
